@@ -7,9 +7,12 @@ E:\Git\Tuoluo\Project\Project.uvproj
 Project File Date:  06/13/2015
 
 <h2>Output:</h2>
-Build target 'Flash'
+Rebuild target 'Flash'
 compiling stm32f10x_it.c...
 compiling main.c...
+..\User\main.c(4): error:  #5: cannot open source input file "L3G4200D.h": No such file or directory
+  #include "L3G4200D.h"
+..\User\main.c: 0 warnings, 1 error
 compiling usart_printf.c...
 ..\User\usart_printf.c(178): warning:  #940-D: missing return statement at end of non-void function "_sys_exit"
   } 
@@ -27,16 +30,5 @@ compiling stm32f10x_usart.c...
 compiling stm32f10x_fsmc.c...
 compiling core_cm3.c...
 compiling system_stm32f10x.c...
-linking...
-.\Obj\Output.axf: Error: L6218E: Undefined symbol I2C_GPIO_Config (referred from main.o).
-.\Obj\Output.axf: Error: L6218E: Undefined symbol Init_ADXL345 (referred from main.o).
-.\Obj\Output.axf: Error: L6218E: Undefined symbol Init_HMC5883 (referred from main.o).
-.\Obj\Output.axf: Error: L6218E: Undefined symbol Init_L3G4200D (referred from main.o).
-.\Obj\Output.axf: Error: L6218E: Undefined symbol sensor_data_with (referred from main.o).
-Not enough information to list image symbols.
-Finished: 1 information, 0 warning and 5 error messages.
-".\Obj\Output.axf" - 5 Error(s), 2 Warning(s).
+".\Obj\Output.axf" - 1 Error(s), 2 Warning(s).
 Target not created
-</pre>
-</body>
-</html>
