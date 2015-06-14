@@ -7,28 +7,65 @@ E:\Git\Tuoluo\Project\Project.uvproj
 Project File Date:  06/13/2015
 
 <h2>Output:</h2>
-Rebuild target 'Flash'
-compiling stm32f10x_it.c...
-compiling main.c...
-..\User\main.c(4): error:  #5: cannot open source input file "L3G4200D.h": No such file or directory
-  #include "L3G4200D.h"
-..\User\main.c: 0 warnings, 1 error
-compiling usart_printf.c...
-..\User\usart_printf.c(178): warning:  #940-D: missing return statement at end of non-void function "_sys_exit"
-  } 
-..\User\usart_printf.c: 1 warning, 0 errors
-compiling systick.c...
-compiling tft_lcd.c...
-..\User\tft_lcd.c(252): warning:  #177-D: function "RGB" was declared but never referenced
-  static u16 RGB(u8 R,u8 G,u8 B)
-..\User\tft_lcd.c: 1 warning, 0 errors
-assembling startup_stm32f10x_hd.s...
-compiling stm32f10x_rcc.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_usart.c...
-compiling stm32f10x_fsmc.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-".\Obj\Output.axf" - 1 Error(s), 2 Warning(s).
+Build target 'Flash'
+linking...
+Program Size: Code=26994 RO-data=8030 RW-data=152 ZI-data=1832  
+FromELF: creating hex file...
+".\Obj\Output.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+sensor_data.c(263): warning:  #177-D: variable "y" was declared but never referenced
+      float x,y,z;
+..\User\using\sensor_data.c(263): warning:  #177-D: variable "z" was declared but never referenced
+      float x,y,z;
+..\User\using\sensor_data.c(83): warning:  #177-D: function "Data_Send_Senser" was declared but never referenced
+  static void Data_Send_Senser(void)
+..\User\using\sensor_data.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=26994 RO-data=8030 RW-data=152 ZI-data=1832  
+FromELF: creating hex file...
+".\Obj\Output.axf" - 0 Error(s), 4 Warning(s).
+er referenced
+      unsigned int data;
+..\User\driver\ADXL345.c(196): warning:  #9-D: nested comment is not allowed
+  //***********************************************************************
+..\User\driver\ADXL345.c(218): warning:  #9-D: nested comment is not allowed
+  //***********************************************************************
+..\User\driver\ADXL345.c(240): warning:  #9-D: nested comment is not allowed
+  //***********************************************************************
+..\User\driver\ADXL345.c(263): warning:  #9-D: nested comment is not allowed
+  //*********************************************************
+..\User\driver\ADXL345.c(264): warning:  #9-D: nested comment is not allowed
+  //******主程序********
+..\User\driver\ADXL345.c(265): warning:  #9-D: nested comment is not allowed
+  //*********************************************************
+..\User\driver\ADXL345.c(31): warning:  #177-D: variable "ge" was declared but never referenced
+  static uchar ge,shi,bai,qian,wan;           //显示变量
+..\User\driver\ADXL345.c(31): warning:  #177-D: variable "shi" was declared but never referenced
+  static uchar ge,shi,bai,qian,wan;           //显示变量
+..\User\driver\ADXL345.c(31): warning:  #177-D: variable "bai" was declared but never referenced
+  static uchar ge,shi,bai,qian,wan;           //显示变量
+..\User\driver\ADXL345.c(31): warning:  #177-D: variable "qian" was declared but never referenced
+  static uchar ge,shi,bai,qian,wan;           //显示变量
+..\User\driver\ADXL345.c(31): warning:  #177-D: variable "wan" was declared but never referenced
+  static uchar ge,shi,bai,qian,wan;           //显示变量
+..\User\driver\ADXL345.c: 12 warnings, 0 errors
+compiling HMC5883.c...
+compiling I2C.c...
+compiling IMU.C...
+..\User\driver\IMU.H(6): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\User\driver\IMU.C(25): warning:  #177-D: variable "q0q3" was declared but never referenced
+      float idata q0q3 = q0*q3;
+..\User\driver\IMU.C(27): warning:  #177-D: variable "q1q2" was declared but never referenced
+      float idata q1q2 = q1*q2;
+..\User\driver\IMU.C: 3 warnings, 0 errors
+compiling L3G4200D.c...
+linking...
+.\Obj\Output.axf: Error: L6218E: Undefined symbol sensor_data_with (referred from main.o).
+.\Obj\Output.axf: Error: L6218E: Undefined symbol SensorData (referred from imu.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+".\Obj\Output.axf" - 2 Error(s), 17 Warning(s).
 Target not created

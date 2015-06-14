@@ -357,7 +357,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS\CM3\CoreSupport;..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User</IncludePath>
+              <IncludePath>..\Libraries\CMSIS\CM3\CoreSupport;..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User;..\User\driver;..\User\using</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -423,6 +423,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\tft_lcd.c</FilePath>
             </File>
+            <File>
+              <FileName>sensor_data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\using\sensor_data.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -477,6 +482,36 @@
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\system_stm32f10x.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>driver</GroupName>
+          <Files>
+            <File>
+              <FileName>ADXL345.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\ADXL345.c</FilePath>
+            </File>
+            <File>
+              <FileName>HMC5883.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\HMC5883.c</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\I2C.c</FilePath>
+            </File>
+            <File>
+              <FileName>IMU.C</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\IMU.C</FilePath>
+            </File>
+            <File>
+              <FileName>L3G4200D.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\L3G4200D.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -899,6 +934,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\tft_lcd.c</FilePath>
             </File>
+            <File>
+              <FileName>sensor_data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\using\sensor_data.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -953,6 +993,36 @@
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\system_stm32f10x.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>driver</GroupName>
+          <Files>
+            <File>
+              <FileName>ADXL345.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\ADXL345.c</FilePath>
+            </File>
+            <File>
+              <FileName>HMC5883.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\HMC5883.c</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\I2C.c</FilePath>
+            </File>
+            <File>
+              <FileName>IMU.C</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\IMU.C</FilePath>
+            </File>
+            <File>
+              <FileName>L3G4200D.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\driver\L3G4200D.c</FilePath>
             </File>
           </Files>
         </Group>
